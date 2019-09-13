@@ -1,0 +1,237 @@
+/**************Base Element Style**************/
+
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+li,
+span,
+p {
+font-family: 'Mountains of Christmas', sans-serif;
+}
+
+p {
+	font-size: 1.3em;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/**************Navigation**************/
+
+.name {
+	margin: 0;
+	padding-top: .5em;
+	font-family: 'Mountains of Christmas', sans-serif;
+	font-size: 4.75em;
+}
+
+.main-nav a {
+	padding: 40px;
+	display: block;
+	font-family: 'Mountains of Christmas', sans-serif;
+	font-size: 1.75em;
+}
+
+/*********Psuedo Elements********/
+/********************************/
+
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+}
+
+a:hover {
+  color: #ffb3b3;
+}
+
+a:active {
+  color: #000;
+}
+
+/**************Layout Containers**************/
+
+.main-header {
+	text-align: center;
+	background: #ff4d4d;
+	width: 100%; 
+	padding: 1em 0;
+}
+
+.main-footer {
+	text-align: center;
+	background: #ff4d4d;
+	width: 100%;
+	padding: 2em 0;
+}
+
+.t-border {
+	  border-bottom: 2px solid #dfe2e6;
+	}
+/**************Who to Shop For**************/
+
+
+/**************Blog**************/
+
+.ul {
+	list-style-type: square; 
+	padding-bottom: 1em;
+}
+
+.quickPost {
+	font-size: 1.25em;
+	font-family: 'Mountains of Christmas', sans-serif;
+}
+
+/**************Media Queries**************/
+
+@media (min-width: 769px) {
+
+	.main-header,
+	.main-nav {
+		display: flex;
+	}
+
+			.main-header {
+				flex-direction: column;
+				align-items: center;
+			}
+	
+	.wrap {
+		flex: 1;
+	}
+
+	.name,
+	.main-nav li {
+		display: inline-block;
+	}
+
+
+/*********Containers********/
+/************************/
+
+	.container {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		width: 70%;
+		margin: 0 auto;
+	}
+
+
+	.subcontainer1 {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		text-align: auto;
+		background: #ebfaeb;
+	}
+
+			.sc1 {
+				padding-left: 1.5em;
+			}
+
+			.calendar {
+				max-width: 570px;
+				margin-top: 5px;
+				margin-left: 25px;
+				margin-bottom: 25px;
+				padding: 10px;
+				border: dotted 2px #ff4d4d;
+				}
+
+	.subcontainer2 {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		text-align: center;
+		background: #ebfaeb;
+	}
+
+	.subcontainer3 {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		text-align: auto;
+		background: #ebfaeb;
+	}
+
+			.sc3 {
+				padding-left: 1.5em;
+			}
+
+			.fruitBowlRecipe {
+				order: -1;
+				border: dotted 2px #ff4d4d;
+				padding-left: 1em;
+				}
+
+
+	.subcontainer4 {
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+		background: #ebfaeb;
+	}
+	
+			
+			.video {
+				margin-top: 5px;
+				margin-left: 25px;
+				margin-bottom: 25px;
+				padding: 10px;
+				border: dotted 2px #ff4d4d;
+			}
+
+
+	}
+	
+	@media (max-width: 769px) {
+		.calendar,
+		.fruitBowlRecipe {
+			width: 400px;
+		}
+
+		.name {
+			font-size: 2em;
+			padding: 0;
+			margin: 0;
+		}
+
+		.main-nav {
+			font-size: .75em;
+		}
+
+		.main-nav a{
+			padding: 0;
+			margin: 0;
+		}
+
+	}
+
+/*********Other**********/
+/************************/
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+
+
+
+
+
